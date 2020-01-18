@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ParkNow</string>
+    <string name="search_button">Search Here</string>
+    <string name="arrival_button">Arrival</string>
+    <string name="leaving_button">Leaving</string>
+
+
+</resources>
