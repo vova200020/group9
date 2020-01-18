@@ -1,0 +1,11 @@
+  --> ParkNow (app prototype name, used to see how the app looks with a name)
+  --> Requirement - 5. Booking - 
+  -->                     - add GUI elements of the booking screen
+			  - create ParkingSpacesBooking database
+  --> FIRST COMMIT - 
+  -->       - extended action bar
+  -->       - app name/title 
+  -->       - search bar
+  -->       - background Google maps image
+  -->       - "search here" button - on click will allow a user to book a space
+  
