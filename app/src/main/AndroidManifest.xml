@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SearchBooking">
+            <intent-filter>
+                <action android:name="android.intent.action.SearchBooking"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

@@ -3,6 +3,12 @@
     <string name="search_button">Search Here</string>
     <string name="arrival_button">Arrival</string>
     <string name="leaving_button">Leaving</string>
+    <string name="info">Information</string>
+    <string name="reviews">Reviews</string>
+    <string name="help">Help</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

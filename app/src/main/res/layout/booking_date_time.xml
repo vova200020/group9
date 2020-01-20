@@ -5,22 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/p"
+        android:scaleType="centerCrop" />
     <Button
-        android:id="@+id/arrival"
+        android:id="@+id/searchHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="@string/arrival_button"
-        android:gravity="center_horizontal|center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/search_button"
+        android:textSize="12sp"
+        android:textColor="#000000" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/arrival"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/arrival_button"
+            android:textColor="#FFFFFF"
+            android:background="#1E90FF"/>
 
-        />
-    <Button
-        android:id="@+id/leaving"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/leaving_button"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@id/arrival"
-        android:layout_toEndOf="@id/arrival" />
+        <Button
+            android:id="@+id/leaving"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/leaving_button"
+            android:textColor="#FFFFFF"
+            android:background="#1E90FF"/>
+    </LinearLayout>
 
 </RelativeLayout>
