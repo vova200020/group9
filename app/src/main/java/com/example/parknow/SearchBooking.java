@@ -17,11 +17,12 @@ public class SearchBooking extends AppCompatActivity {
     public PagerAdapter pagerAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.SplashTheme);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.reserve_parking);
+        setContentView(R.layout.tabbed_activity);
 
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.txt_layout);
+        getSupportActionBar().setCustomView(R.layout.tabbed_actionbar);
 
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         info = (TabItem) findViewById(R.id.info);

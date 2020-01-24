@@ -3,25 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:actionBarSize="100dp">
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
+        android:text="@string/booking_actionbar"
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
         android:textStyle="bold" />
-
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:queryHint="Enter Destination or Location ID"
-        />
 
 </LinearLayout>

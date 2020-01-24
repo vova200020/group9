@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".info">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/reserve"
+            android:id="@+id/pay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:padding="15dp"
-            android:text="@string/reserve"
+            android:text="@string/pay"
             android:textColor="#FFFFFF"
             android:backgroundTint="#FFA500"/>
     </RelativeLayout>
-</FrameLayout>
+
+</LinearLayout>
