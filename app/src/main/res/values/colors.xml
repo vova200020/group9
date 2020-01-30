@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49BEFF</color>
+    <color name="colorPrimaryDark">#65DCE5</color>
+    <color name="colorAccent">#0D5D98</color>
+    <color name="Address">#2F7092</color>
+    <color name="Email">#0D5D98</color>
+    <color name="Mobile">#3797CF</color>
+    <color name="BankDetails">#0D5D98</color>
+    <color name="SaveProfile">#49BEFF</color>
+    <color name="Headings">#3797CF</color>
+    <color name="solidCircle">#49BEFF</color>
+    <color name="CircleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#4fa0cc</color>
+    <color name="gradStart">#65DCE5</color>
+    <color name="grey">#E5E5E5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>
