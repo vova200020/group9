@@ -19,6 +19,6 @@
             android:padding="15dp"
             android:text="@string/reserve"
             android:textColor="#FFFFFF"
-            android:backgroundTint="#FFA500"/>
+            android:backgroundTint="#1E90FF"/>
     </RelativeLayout>
 </FrameLayout>
