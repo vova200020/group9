@@ -1,202 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="167dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/holo_blue_bright" />
 
+    <TextView
+        android:id="@+id/WhatToDo"
+        android:layout_width="261dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:text="Please enter your log in details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
-<RelativeLayout
-    android:id="@+id/rellay1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingBottom="20dp"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="57dp"
+        android:layout_height="43dp"
+        android:text="E-mail"
+        app:layout_constraintBottom_toBottomOf="@+id/Email"
+        app:layout_constraintEnd_toStartOf="@+id/Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Email" />
 
-    android:background="@drawable/gradient">
-
-
-    <RelativeLayout
-        android:id="@+id/imgUser"
+    <EditText
+        android:id="@+id/Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/circle_border"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_margin="15dp"
-            android:adjustViewBounds="true"
-            android:padding="3dp"
-            android:background="@drawable/circle"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_user" />
-
-    </RelativeLayout>
-
-        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-            android:id="@+id/Usersname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imgUser"
-            android:layout_centerHorizontal="true"
-            android:text="John Smith"
-            android:textSize="32sp"
-            android:textColor="@color/white"
-            android:layout_marginTop="15sp"
-
-            />
-    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
-        android:id="@+id/Useraddress"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Usersname"
-        android:layout_centerHorizontal="true"
-        android:text="London,England"
-        android:textAllCaps="true"
-        android:textSize="16sp"
-        android:textColor="@color/Address"
-        android:layout_marginTop="15sp"
+        android:text="Password"
+        app:layout_constraintBottom_toBottomOf="@+id/Password"
+        app:layout_constraintEnd_toStartOf="@+id/Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Password" />
 
-        />
-
-
-
-
-    </RelativeLayout>
-
-
-<LinearLayout
-    android:id="@+id/linlay1"
-    android:layout_below="@id/rellay1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
-
-    <RelativeLayout
-
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="236sp"
-        android:paddingBottom="5dp"
-        android:paddingTop="5dp"
-        android:background="@color/gradStart"
-        android:gravity="center">
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email"
+        app:layout_constraintVertical_bias="0.183" />
 
+    <Button
+        android:id="@+id/LogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="LogIn"
+        android:text="Log in"
+        app:layout_constraintEnd_toStartOf="@+id/SignUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:orientation="vertical">
-
-            <androidx.appcompat.widget.AppCompatCheckedTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
-
-            <androidx.appcompat.widget.AppCompatCheckedTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Saved spaces"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-    </RelativeLayout>
-
-
-
-
-</LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/linlay1"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <androidx.appcompat.widget.AppCompatCheckedTextView
-                android:layout_width="183dp"
-                android:layout_height="57dp"
-                android:layout_marginTop="380sp"
-                android:gravity="center_vertical"
-                android:paddingTop="4dp"
-                android:text="Email Address"
-                android:textColor="@color/Email"
-                android:textSize="25sp" />
-
-            <androidx.appcompat.widget.AppCompatCheckedTextView
-                android:layout_width="183dp"
-                android:layout_height="57dp"
-                android:text="John.Smith@gmail.com"
-                android:textColor="@color/black"
-                android:textSize="16dp" />
-
-            <androidx.appcompat.widget.AppCompatCheckedTextView
-                android:layout_width="183dp"
-                android:layout_height="57dp"
-                android:gravity="center_vertical"
-                android:paddingTop="4dp"
-                android:text="Password"
-                android:textColor="@color/Email"
-                android:textSize="25sp" />
-
-            <androidx.appcompat.widget.AppCompatCheckedTextView
-                android:layout_width="183dp"
-                android:layout_height="57dp"
-                android:text="******"
-                android:textColor="@color/black"
-                android:textSize="26dp" />
-
-            <androidx.appcompat.widget.AppCompatCheckedTextView
-                android:layout_width="183dp"
-                android:layout_height="57dp"
-                android:gravity="center_vertical"
-                android:paddingTop="4dp"
-                android:text="Mobile Number"
-                android:textColor="@color/Email"
-                android:textSize="25sp" />
-
-            <androidx.appcompat.widget.AppCompatCheckedTextView
-                android:layout_width="183dp"
-                android:layout_height="57dp"
-                android:text="07634351881"
-                android:textColor="@color/black"
-                android:textSize="26dp" />
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-20sp"
-                android:background="@color/solidCircle"
-                android:text="Save Profile"
-                android:textColor="@color/white"
-                android:textSize="25sp"
-                />
-
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-</RelativeLayout>
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="SignUp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
+</androidx.constraintlayout.widget.ConstraintLayout>

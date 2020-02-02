@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">UserprofileUI</string>
+    <string name="app_name">CarParking</string>
+    <string name="title_activity_logged">logged</string>
+    <string name="you_have_been_sucesfully_logged_in">You have been sucesfully logged in</string>
 </resources>
