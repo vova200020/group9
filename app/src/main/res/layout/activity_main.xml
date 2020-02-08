@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -60,9 +65,7 @@
         android:textAllCaps="true"
         android:textSize="16sp"
         android:textColor="@color/Address"
-        android:layout_marginTop="15sp"
-
-        />
+        android:layout_marginTop="15sp" />
 
 
 
@@ -131,8 +134,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-
+            
             <androidx.appcompat.widget.AppCompatCheckedTextView
                 android:layout_width="183dp"
                 android:layout_height="57dp"
@@ -194,9 +196,11 @@
                 />
 
 
+
         </LinearLayout>
 
 
     </LinearLayout>
 
 </RelativeLayout>
+</ScrollView>
