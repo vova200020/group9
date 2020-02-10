@@ -4,7 +4,7 @@
     <item>
         <shape
             android:shape="rectangle">
-            <!-- Set the border color of your layout here -->
+            <!-- Set the total_price_border color of your layout here -->
 
             <stroke android:width="1dp" android:color="#FFA500" />
             <solid android:color="#FFA500" />
@@ -12,7 +12,7 @@
         </shape>
     </item>
 
-    <!-- This is for border bottom but
+    <!-- This is for total_price_border bottom but
     you can change this according to your need -->
     <item android:bottom="6dp" >
         <shape

@@ -9,13 +9,16 @@
     <string name="reserve">Reserve</string>
     <string name="booking_actionbar">Secure Checkout</string>
     <string name="pay">Pay and Reserve</string>
-    <string name="dateSelect">Select Date</string>
-    <string name="strtTime">Select Arrival Time</string>
-    <string name="endTime">Select Leaving Time</string>
+    <string name="dateSelect">Arrival Date</string>
+    <string name="dateLeaving">Leaving Date</string>
+    <string name="strtTime">Arrival Time</string>
+    <string name="endTime">Leaving Time</string>
     <string name="destination">Destination</string>
     <string name="price">Total Price:</string>
     <string name="vehicle">Vehicle Details</string>
     <string name="payment">Payment Details</string>
+    <string name="total_duration">Total Duration</string>
+    <string name="total_price">Total Price</string>
 
 
 
