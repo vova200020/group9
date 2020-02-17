@@ -10,10 +10,13 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 
+import java.util.Set;
+
 public class logged extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setContentView(R.layout.activity_logged);
         super.onCreate(savedInstanceState);
         {
 

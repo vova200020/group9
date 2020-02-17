@@ -2,4 +2,8 @@
     <string name="app_name">CarParking</string>
     <string name="title_activity_logged">logged</string>
     <string name="you_have_been_sucesfully_logged_in">You have been sucesfully logged in</string>
+
+    <string name="title_activity_payment">Payment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

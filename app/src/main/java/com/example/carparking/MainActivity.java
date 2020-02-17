@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
          firebaseAuth= FirebaseAuth.getInstance();
          FirebaseUser user =firebaseAuth.getCurrentUser();
 
+
          //goes to second activity if user is logged in
 //         if (user !=null){
 //             finish();
@@ -48,8 +49,15 @@ public class MainActivity extends AppCompatActivity {
         }
         public void SignUp (View view){
 
+
          email= emailE.getText().toString().trim();
          password = passwordE.getText().toString().trim();
+
+         if (email.matches("")||password.matches("")){
+             Toast.makeText(MainActivity.this, " You have to enter your details", Toast.LENGTH_SHORT).show();
+             return;
+         }
+         else{
 
         firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -58,30 +66,42 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, " You have been sucesfully signed up", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(MainActivity.this,logged.class));
                 }
-                else {
+
+                else  {
                     Toast.makeText(MainActivity.this, " Failed", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        });}
 
         }
         public void LogIn (View view){
 
-          firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-              @Override
-              public void onComplete(@NonNull Task<AuthResult> task) {
-                  if(task.isSuccessful()){
-                      //FirebaseUser user = firebaseAuth.getCurrentUser();
-                      Toast.makeText(MainActivity.this, " You have been sucesfully Loged in", Toast.LENGTH_SHORT).show();
-                      startActivity(new Intent(MainActivity.this,logged.class));
-                  }
-                  else{
-                      Toast.makeText(MainActivity.this, " Failed", Toast.LENGTH_SHORT).show();
-                  }
-              }
-          });
+            email= emailE.getText().toString().trim();
+            password = passwordE.getText().toString().trim();
 
-          firebaseAuth.signOut();
+            if (email.matches("")||password.matches("")){
+                Toast.makeText(MainActivity.this, " You have to enter your details", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            else{
+            firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        FirebaseUser user = firebaseAuth.getCurrentUser();
+                        Toast.makeText(MainActivity.this, " You have been sucesfully Loged in", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(MainActivity.this, logged.class));
+                    } else if (task.isSuccessful()!=true){
+                        Toast.makeText(MainActivity.this, " Failed", Toast.LENGTH_SHORT).show();
+                    }
+
+                }
+
+            });}
+
+            //firebaseAuth.signOut();
+        }
 
 
 
@@ -90,5 +110,5 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
-}
+
 
