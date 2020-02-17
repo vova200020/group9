@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else  {
-                    Toast.makeText(MainActivity.this, " Failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Sign Up failed", Toast.LENGTH_SHORT).show();
                 }
             }
         });}
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, " You have been sucesfully Loged in", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(MainActivity.this, logged.class));
                     } else if (task.isSuccessful()!=true){
-                        Toast.makeText(MainActivity.this, " Failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, " Log In failed", Toast.LENGTH_SHORT).show();
                     }
 
                 }
@@ -104,11 +104,30 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
+    public void ForgotPassword (View view) {
+        email= emailE.getText().toString().trim();
+        firebaseAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()){
+                    Toast.makeText(MainActivity.this, " Sent", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(MainActivity.this, " You have to enter the email in the field above", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+
+
+    }
+    }
 
 
 
 
 
-        }
+
+
 
 
