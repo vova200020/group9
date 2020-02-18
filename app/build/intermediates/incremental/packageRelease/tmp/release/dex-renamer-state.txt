@@ -1,0 +1,4 @@
+#Tue Feb 18 07:45:50 GMT 2020
+base.0=C\:\\Users\\Tejash\\AndroidStudioProjects\\group-project-2019-20-group-9\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
