@@ -10,10 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".SignWithPhone"
+            android:label="@string/title_activity_sign_with_phone"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".Payment"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_payment"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
         <activity
             android:name=".logged"
             android:label="@string/title_activity_logged"

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,15 +30,19 @@ public class MainActivity extends AppCompatActivity {
     EditText passwordE;
     String email;
     String password;
+    Switch SignPhone;
     private FirebaseAuth firebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().setTitle("Log in ");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
          emailE = findViewById(R.id.Email);
          passwordE = findViewById(R.id.Password);
          firebaseAuth= FirebaseAuth.getInstance();
          FirebaseUser user =firebaseAuth.getCurrentUser();
+         SignPhone =findViewById(R.id.switch1);
 
 
          //goes to second activity if user is logged in
@@ -47,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
 //         }
 
         }
+        public void SignInWithPhone (View view){
+            Toast.makeText(MainActivity.this, " Yfffffffs", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(MainActivity.this,SignWithPhone.class));
+        }
+
         public void SignUp (View view){
 
 
